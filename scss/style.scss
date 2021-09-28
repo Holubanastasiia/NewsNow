@@ -150,7 +150,7 @@ button {
                     top: 39%;
                     right: -12px;
                     height: 9px;
-                    background-image: url(images/arrow.svg);
+                    background-image: url(../images/arrow.svg);
                     background-repeat: no-repeat;
 
                 }
@@ -328,7 +328,7 @@ button {
                     left: -13px;
                     position: absolute;
                     content: "";
-                    background-image: url(images/list.svg);
+                    background-image: url(../images/list.svg);
                     background-repeat: no-repeat;
                     width: 23.65px;
                     height: 17.81px;
@@ -361,7 +361,7 @@ button {
                         left: -10px;
                         position: absolute;
                         content: "";
-                        background-image: url(images/Union.svg);
+                        background-image: url(../images/Union.svg);
                         background-repeat: no-repeat;
                         width: 23.65px;
                         height: 17.81px;
@@ -586,7 +586,7 @@ button {
                     content: "";
                     width: 10px;
                     height: 6px;
-                    background-image: url(images/arr_down.svg);
+                    background-image: url(../images/arr_down.svg);
                     background-repeat: no-repeat;
                     right: 0;
                     top: 25%;
@@ -594,7 +594,7 @@ button {
 
                 &-upp {
                     &::before {
-                        background-image: url(images/arr_down.svg);
+                        background-image: url(../images/arr_down.svg);
                         transform: rotate(180deg);
                     }
                 }
