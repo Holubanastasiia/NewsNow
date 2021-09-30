@@ -129,115 +129,6 @@ button {
 
 /*-----------------------------------Main Part---------------------------------------------------------------*/
 
-.content {
-    margin-top: 37.5px;
-    margin-left: 27.5px;
-    min-width: 54px;
-    width: 272px;
-    border: 1px solid #D9DCE4;
-    text-align: center;
-
-}
-
-.button {
-    background: #FFFFFF;
-    width: 100%;
-    color: #3DCF8E;
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-
-    &:hover {
-        background-color: #fff;
-    }
-
-    &:hover .title {
-        color: #34B079;
-    }
-
-    &:hover .ring {
-        background-color: #34B079;
-    }
-
-    &:hover .list {
-        color: inherit;
-    }
-
-    & .title {
-        font-size: 14px;
-        line-height: 17px;
-    }
-}
-
-.ring {
-    position: absolute;
-    width: 55px;
-    height: 55px;
-    background-color: #3DCF8E;
-    border-radius: 50%;
-    top: -5px;
-    left: -13px;
-
-    &::before {
-        position: absolute;
-        content: "";
-        width: 23px;
-        height: 17px;
-        background-image: url(../images/list.svg);
-        background-repeat: no-repeat;
-        top: 18px;
-        left: 15px;
-    }
-}
-
-.list {
-    display: none;
-    text-transform: capitalize;
-    align-items: center;
-    margin-top: 30px;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 17px;
-    padding-left: 0;
-}
-
-.link {
-    &:hover {
-        color: #34B079;
-    }
-}
-
-.content {
-
-    &.open {
-        height: 204px;
-    }
-
-    &.open ul {
-        display: block;
-    }
-
-    &.open p {
-        margin-top: 14px;
-    }
-
-    &.open .ring::before {
-        background-image: url(../images/Union.svg);
-        top: 19px;
-        left: 19px;
-    }
-}
-
-.link:active {
-    color: #000;
-}
-
-.item:not(:last-child) {
-    margin-bottom: 20px;
-}
-
-/*-----------------*/
 
 .main {
     margin-top: 50px;
@@ -389,105 +280,114 @@ button {
                 }
             }
         }
-
-        /*---------content----*/
-
-
-
-        &-content {
-            margin: 37.5px 0px 0px 28px;
-
-            &-list {
-                display: none;
-            }
-
-            &-item {
-                margin-bottom: 20px;
-                color: $green;
-
-                &:first-child {
-                    color: #333;
-                }
-            }
-
-            &-link {
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 17px;
-                text-transform: capitalize;
-
-                &:hover {
-                    color: $hover;
-                }
-            }
-
-            &-text {
-                // &-open {
-                //     margin-bottom: 20px;
-                // }
-            }
-
-            &-btn {
-                position: relative;
-                border: 1px solid #D9DCE4;
-                width: 272px;
-                height: 54px;
-                font-weight: bold;
-                font-size: 14px;
-                line-height: 17px;
-                background-color: #fff;
-                color: $green;
-                transition: all 0.3s ease 0s;
-
-                &::before {
-                    z-index: 10;
-                    left: -13px;
-                    position: absolute;
-                    content: "";
-                    background-image: url(../images/list.svg);
-                    background-repeat: no-repeat;
-                    width: 23.65px;
-                    height: 17.81px;
-                }
-
-                &:hover {
-                    color: $hover;
-                    background-color: #fff;
-                }
-
-                &-ring {
-                    position: absolute;
-                    top: -1px;
-                    left: -28px;
-                    width: 55px;
-                    height: 55px;
-                    background-color: $green;
-                    border-radius: 50%;
-                }
-
-                // &-open {
-                //     display: none;
-                //     position: relative;
-                //     margin-top: 91px;
-                //     height: 204px;
-                //     padding: 19px 19px 19px 29px;
-                //     color: $hover;
-
-                //     &::before {
-                //         z-index: 10;
-                //         left: -10px;
-                //         position: absolute;
-                //         content: "";
-                //         background-image: url(../images/Union.svg);
-                //         background-repeat: no-repeat;
-                //         width: 23.65px;
-                //         height: 17.81px;
-                //     }
-                // }
-            }
-        }
     }
 }
+
+/*---------------------------------------------------------------------------------------------------------*/
+.content {
+    margin-top: 37.5px;
+    margin-left: 27.5px;
+    min-width: 54px;
+    width: 272px;
+    border: 1px solid #D9DCE4;
+    text-align: center;
+
+    &.open {
+        height: 204px;
+    }
+
+    &.open ul {
+        display: block;
+    }
+
+    &.open p {
+        margin-top: 14px;
+    }
+
+    &.open .ring::before {
+        background-image: url(../images/Union.svg);
+        top: 19px;
+        left: 19px;
+    }
+}
+
+.button {
+    background: #FFFFFF;
+    width: 100%;
+    color: #3DCF8E;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+
+    &:hover {
+        background-color: #fff;
+    }
+
+    &:hover .title {
+        color: #34B079;
+    }
+
+    &:hover .ring {
+        background-color: #34B079;
+    }
+
+    &:hover .list {
+        color: inherit;
+    }
+
+    & .title {
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
+
+.ring {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background-color: #3DCF8E;
+    border-radius: 50%;
+    top: -5px;
+    left: -13px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        width: 23px;
+        height: 17px;
+        background-image: url(../images/list.svg);
+        background-repeat: no-repeat;
+        top: 18px;
+        left: 15px;
+    }
+}
+
+.list {
+    display: none;
+    text-transform: capitalize;
+    align-items: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 0;
+}
+
+.link {
+    &:hover {
+        color: #34B079;
+    }
+
+    &:active {
+        color: #000;
+    }
+}
+
+.item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 
 
 /*-----------------------------------------FOOTER-------------------------------------------*/
