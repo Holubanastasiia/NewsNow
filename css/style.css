@@ -121,6 +121,111 @@ button:hover {
 }
 
 /*-----------------------------------Main Part---------------------------------------------------------------*/
+.content {
+  margin-top: 37.5px;
+  margin-left: 27.5px;
+  min-width: 54px;
+  width: 272px;
+  border: 1px solid #D9DCE4;
+  text-align: center;
+}
+
+.button {
+  background: #FFFFFF;
+  width: 100%;
+  color: #3DCF8E;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #fff;
+}
+
+.button:hover .title {
+  color: #34B079;
+}
+
+.button:hover .ring {
+  background-color: #34B079;
+}
+
+.button:hover .list {
+  color: inherit;
+}
+
+.button .title {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.ring {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  background-color: #3DCF8E;
+  border-radius: 50%;
+  top: -5px;
+  left: -13px;
+}
+
+.ring::before {
+  position: absolute;
+  content: "";
+  width: 23px;
+  height: 17px;
+  background-image: url(../images/list.svg);
+  background-repeat: no-repeat;
+  top: 18px;
+  left: 15px;
+}
+
+.list {
+  display: none;
+  text-transform: capitalize;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 0;
+}
+
+.link:hover {
+  color: #34B079;
+}
+
+.content.open {
+  height: 204px;
+}
+
+.content.open ul {
+  display: block;
+}
+
+.content.open p {
+  margin-top: 14px;
+}
+
+.content.open .ring::before {
+  background-image: url(../images/Union.svg);
+  top: 19px;
+  left: 19px;
+}
+
+.link:active {
+  color: #000;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+/*-----------------*/
 .main {
   margin-top: 50px;
 }
@@ -209,6 +314,7 @@ button:hover {
 
 .main__news {
   margin-left: 170px;
+  /*---------content----*/
 }
 
 .main__news-title {
@@ -281,6 +387,10 @@ button:hover {
   margin: 37.5px 0px 0px 28px;
 }
 
+.main__news-content-list {
+  display: none;
+}
+
 .main__news-content-item {
   margin-bottom: 20px;
   color: #3DCF8E;
@@ -299,10 +409,6 @@ button:hover {
 
 .main__news-content-link:hover {
   color: #34B079;
-}
-
-.main__news-content-text-open {
-  margin-bottom: 20px;
 }
 
 .main__news-content-btn {
@@ -343,25 +449,6 @@ button:hover {
   height: 55px;
   background-color: #3DCF8E;
   border-radius: 50%;
-}
-
-.main__news-content-btn-open {
-  position: relative;
-  margin-top: 91px;
-  height: 204px;
-  padding: 19px 19px 19px 29px;
-  color: #34B079;
-}
-
-.main__news-content-btn-open::before {
-  z-index: 10;
-  left: -10px;
-  position: absolute;
-  content: "";
-  background-image: url(../images/Union.svg);
-  background-repeat: no-repeat;
-  width: 23.65px;
-  height: 17.81px;
 }
 
 /*-----------------------------------------FOOTER-------------------------------------------*/

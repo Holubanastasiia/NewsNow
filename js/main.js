@@ -69,5 +69,11 @@ for (i = 0; i < showContainer.length; i++) {
 
 /*----------------------------------CONTENT BUTTON-----------------------------------------*/
 
+let popup = document.querySelector(".content")
+let btn = document.querySelector(".button")
+let open = document.querySelector(".list")
+let ring = document.querySelector(".ring")
 
-
+popup.addEventListener("click", function (e) {
+    e.currentTarget.classList.toggle("open")
+})
