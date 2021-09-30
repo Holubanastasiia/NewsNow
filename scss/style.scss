@@ -10,9 +10,9 @@ body {
     color: #333;
     line-height: 25px;
 
-    &._lock {
-        overflow: hidden;
-    }
+    // &._lock {
+    //     overflow: hidden;
+    // }
 }
 
 a {
@@ -301,7 +301,7 @@ button {
     }
 
     &.open p {
-        margin-top: 14px;
+        margin-top: 13px;
     }
 
     &.open .ring::before {
@@ -578,10 +578,6 @@ button {
             font-size: 27px;
             line-height: 36px;
             margin-bottom: 45px;
-
-            // &:not(:last-child) {
-            //     margin-bottom: 45px;
-            // }
         }
 
         & .menu__mobile {
