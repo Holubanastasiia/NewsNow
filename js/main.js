@@ -55,25 +55,19 @@ if (menu) {
 
 /*------------------------------------Main part------------------------------------------*/
 
-let btnShow = document.getElementsByClassName("show");
-let extra = document.getElementsByClassName("extra");
+var showContainer = document.getElementsByClassName("read-more-container");
+var extra = document.getElementsByClassName("extra");
 
-for (i = 0; i < btnShow.length; i++) {
-    for (j = 0; j < extra.length; j++) {
-        btnShow[i].addEventListener("click", function (e) {
-            e.preventDefault()
-            btnShow[i].classList.add("_pressed");
-            extra[i].classList.add("_pressed");
-        })
+for (i = 0; i < showContainer.length; i++) {
+    showContainer[i].addEventListener("click", function (e) {
+        console.log(e.currentTarget);
+        e.preventDefault();
+        e.currentTarget.classList.add("_pressed");
     }
+    )
 }
 
-// btnShow.forEach(element => {
-//     element.addEventListener("click", showExtra)
-// });
+/*----------------------------------CONTENT BUTTON-----------------------------------------*/
 
-// function showExtra(e) {
-//     e.preventDefault()
-//     btnShow.classList.add("_pressed");
-//     extra.classList.add("_pressed");
-// }
+
+

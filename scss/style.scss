@@ -65,23 +65,22 @@ button {
     box-sizing: content-box;
 }
 
+
 .extra {
     display: none;
 }
 
-._pressed {
-    display: block;
-}
+.read-more-container {
+    &._pressed {
+        & a {
+            display: none;
+        }
 
-.exta {
-    display: inline-block;
+        & span {
+            display: inline;
+        }
+    }
 }
-
-.show {
-    display: inline-block;
-}
-
-//  
 
 /*------------------------------------------HEADER--------------------------------------------------*/
 

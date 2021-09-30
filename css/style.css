@@ -67,16 +67,12 @@ button:hover {
   display: none;
 }
 
-._pressed {
-  display: block;
+.read-more-container._pressed a {
+  display: none;
 }
 
-.exta {
-  display: inline-block;
-}
-
-.show {
-  display: inline-block;
+.read-more-container._pressed span {
+  display: inline;
 }
 
 /*------------------------------------------HEADER--------------------------------------------------*/
